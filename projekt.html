@@ -1,0 +1,156 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="skrypt.js"></script>
+		<title> Tytul </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+		<link rel="stylesheet" href="styl.css" type="text/css">	
+	</head>
+
+	<body>	
+		<!- NAGŁÓWEK ->	
+		<div class="tabela" style = "height: 600px"> 
+			<div class=naglowek> <h1 class=body1> GENERATOR HARMONOGRAMU </h1> </div>
+			<div class=komorka1>
+				<p>
+					<h1 class="tekst"> MENU: </h1>
+					<ul list-style-type: circle>
+						<li><a href="#kreator">Kreator</a></li>
+						<li><a href="#tabela">Tabela</a></li>
+					</ul>
+				</p>
+			</div>
+			<div class=komorka2 style="width: 60%"> 
+			<h1> Opis </h1>
+			<p style="font-size:20px;">
+			Strona służy do automatycznego harmonogramu aktywności. W sekcji Kreator należy zdefiniować parametry aktywności: <br/>
+			- nazwa, <br/>
+			- całkowity czas typu aktywności, <br/>
+			- długość pojedynczej aktywności danego typu. <br/> <br/>
+			<img src ="img1.png" width ="484" height ="251" alt="przyklad1"/>	
+			Użycie przycisku "ZATWIERDŹ spowoduje wygenerowanie harmonogramu.
+
+			</p>
+			</div>
+		</div>	
+
+		<!- KREATOR ->
+		<div class="tabela">
+			<div class=naglowek>
+				<a name="kreator"></a>
+				<h1 class="body1">KREATOR</h1> 
+			</div>		
+
+			<div class="komorka1"> 
+				<h1 class="tekst"> Lista zajęć: </h1>
+				<ol id="listaAkty">
+				</ol>
+			</div>
+
+			<div>
+				<div>
+				<h1 class="tekst"> Wypełnij parametry aktywności:</h1></div>
+
+				<form action="javascript:dodaj()">
+				<div class="komorka2">				
+					<p class="tekst"> Nazwa: </p> 
+					<p class="tekst"> Ilość godzin: </p> 
+					<p class="tekst"> Długość pojedynczej <br/> aktywności (w min.): </p>
+
+					<p> 
+					<input type="submit" value="DODAJ"/>  
+					<input type="button" value="ZATWIERDŹ" onClick="generujTabele()">
+					</p>
+					<p> <input type="reset" value="Wyczyść" onClick ="wyczyscWszystko()"/> </p>
+
+				</div>
+				<div class="komorka3">
+					<p> <input type="text" id="nazwaTxtArea" name="nazwaAkty"/> </p>
+					<p> <input type="text" id="iloscGodzTxtArea" name="nazwaAkty" onkeypress='return (event.charCode>=48 && event.charCode<=57) || event.charCode == 0'/> </p>
+					<p> <input type="text" id="dlAktyTxtArea" name="nazwaAkty" onkeypress='return (event.charCode>=48 && event.charCode<=57) || event.charCode == 0'/> </p>
+				</div>
+				</form>
+			<div>
+		</div>		
+
+		<div class=stopka>	<h1 class=body1>TABELA</h1>	</div><br>
+
+		<!- TABELA ->		
+				<div id="tabela" class="harm"> 
+					<div class="wierszNa">
+						<div class="komorkaD">
+							<p>  </p>
+						</div>
+						<div class="komorkaD">
+							<p> PON </p>
+						</div>	
+						<div class="komorkaD">
+							<p> WT </p>
+						</div>	
+						<div class="komorkaD">
+							<p> ŚR </p>
+						</div>
+						<div class="komorkaD">
+							<p> CZW </p>
+						</div>
+						<div class="komorkaD">
+							<p> PT </p>
+						</div>	
+									
+					</div>
+
+					<div class="wierszD">
+						<div class="kolD">
+							<div class=komorkaH>
+								8:00 - 9:00
+							</div>	
+							<div class=komorkaH>
+								9:00 - 10:00
+							</div>	
+							<div class=komorkaH>
+								10:00 - 11:00
+							</div>	
+							<div class=komorkaH>
+								11:00 - 12:00
+							</div>	
+							<div class=komorkaH>
+								12:00 - 13:00
+							</div>	
+							<div class=komorkaH>
+								13:00 - 14:00
+							</div>	
+							<div class=komorkaH>
+								14:00 - 15:00
+							</div>	
+							<div class=komorkaH>
+								15:00 - 16:00
+							</div>	
+							<div class=komorkaH>
+								16:00 - 17:00
+							</div>	
+							<div class=komorkaH>
+								17:00 - 18:00
+							</div>					
+						</div>
+
+						<div id="kolPON" class="kolD">
+						</div>
+
+						<div id="kolWT" class="kolD">
+						</div>
+
+						<div id="kolSR" class="kolD">	
+						</div>
+
+						<div id="kolCZW" class="kolD">	
+						</div>
+
+						<div id="kolPT" class="kolD">
+						</div>
+
+					</div>
+				</div>
+				<br/>		
+		<div class=stopka>	<h1 class=body1></h1>	</div>
+	</body>
+</html>

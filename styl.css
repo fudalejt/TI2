@@ -1,0 +1,43 @@
+div.tabela
+{width:900px; height: 300px; margin: 0 ;}
+
+div.naglowek, div.stopka
+{padding:0.5em; color:white; background-color:blue; clear:left;}
+
+h1.naglowek
+{padding: 0; margin: 0;}
+
+div.komorka1
+{float: left; height: 100%; width:20%; margin: 0; padding: 0;}
+
+div.komorka2
+{float:left; height: 100%; width: 24%; margin: 0; padding: 0; }
+
+div.komorka3
+{float:left; height: 100%; width: 40%; margin: 0; padding: 0; }
+
+.tekst
+{padding:0; margin-left: 10px; margin-top: 10px; font-size:20px;}
+
+
+div.harm
+{width:700px; height: 500px; margin-left: 10px; border-style: solid;}
+
+div.kolD
+{float: left; width: 16%; height: 100%; margin: 0; border-right:1px solid gray; border-bottom:1px solid gray; }
+
+div.kolGodz
+{ float: left; width: 16%; height: 100%; margin: 0; border-right:1px solid gray; border-bottom:1px solid gray;  }
+
+div.wierszNa
+{float: left; width: 100%; height: 8%; margin: 0; border-right:1px solid gray; border-bottom:1px solid gray; }
+
+div.wierszD
+{float: left; width: 100%; height: 90%; margin: 0; border-right:1px solid gray; border-bottom:1px solid gray; }
+
+div.komorkaD
+{ float: left; width: 16%; height: 100%; margin: 0; border-right:1px solid gray; border-bottom:1px solid gray; }
+
+div.komorkaH
+{ float: left; width: 100%; height: 10%; margin: 0; border-right:1px solid gray; border-bottom:1px solid gray; }
+
